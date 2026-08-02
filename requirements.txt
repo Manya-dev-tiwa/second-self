@@ -2,3 +2,4 @@ streamlit
 sentence-transformers
 groq
 streamlit-agraph
+python-dotenv
