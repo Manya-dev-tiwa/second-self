@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+.venv/
+venv/
+env/
+
+# Data files (will be mounted as volume)
+data/embeddings.pkl
+data/file_hashes.pkl
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Obsidian
+.obsidian/
+
+# Development
+test_*.py
+*.lnk
+wiki/
+raw/
+
+# Documentation
+docs/
+README.md
+AGENTS.md
+deployment-plan.md

@@ -140,9 +140,14 @@ summary: "{summary.replace('"', "'")}"
             
         logging.info(f"Saved categorized file to: {new_filepath}")
         
-        # Remove old file
-        os.remove(filepath)
-        logging.info(f"Removed original file: {filepath}")
+        # Remove old file with error handling
+        try:
+            os.remove(filepath)
+            logging.info(f"Removed original file: {filepath}")
+        except FileNotFoundError:
+            logging.warning(f"File already removed: {filepath}")
+        except Exception as e:
+            logging.error(f"Failed to remove {filepath}: {e}")
         
 if __name__ == "__main__":
     process_files()
