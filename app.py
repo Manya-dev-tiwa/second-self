@@ -413,6 +413,7 @@ st.markdown("""
 @st.cache_resource
 def get_rag_engine():
     """Get or create RAG engine instance with resource caching"""
+    # Trigger reload to load fresh embeddings from git
     from ask import RAGEngine
     return RAGEngine()
 
