@@ -8,11 +8,12 @@ env/
 .DS_Store
 raw/*
 !raw/.gitkeep
-wiki/*
-!wiki/.gitkeep
+# Allow committing processed notes
+!wiki/*.md
 
 # Deployment specific
-data/embeddings.pkl
+# Allow committing embeddings so Streamlit Cloud can run the RAG engine
+!data/embeddings.pkl
 data/file_hashes.pkl
 .streamlit/secrets.toml
 *.lnk
