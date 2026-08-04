@@ -40,10 +40,10 @@ class RAGEngine:
                     self.embeddings_tensor = None
                     return
 
-                # Convert list of embeddings to a single numpy array then to tensor
-                embeds = np.array([item["embedding"] for item in self.data])
-                self.embeddings_tensor = torch.tensor(embeds)
-                print(f"Successfully loaded {len(self.data)} embeddings from JSON.")
+                # Convert list of embeddings to a single numpy array then to tensor (ensure float32)
+                embeds = np.array([item["embedding"] for item in self.data], dtype=np.float32)
+                self.embeddings_tensor = torch.tensor(embeds, dtype=torch.float32)
+                print(f"Successfully loaded {len(self.data)} embeddings from JSON (float32).")
                 return
             except Exception as e:
                 print(f"Error loading JSON embeddings: {e}. Falling back to pickle...")
@@ -64,10 +64,10 @@ class RAGEngine:
                 self.embeddings_tensor = None
                 return
 
-            # Convert list of embeddings to a single numpy array then to tensor if needed
-            embeds = np.array([item["embedding"] for item in self.data])
-            self.embeddings_tensor = torch.tensor(embeds)
-            print(f"Successfully loaded {len(self.data)} embeddings from pickle.")
+            # Convert list of embeddings to a single numpy array then to tensor if needed (ensure float32)
+            embeds = np.array([item["embedding"] for item in self.data], dtype=np.float32)
+            self.embeddings_tensor = torch.tensor(embeds, dtype=torch.float32)
+            print(f"Successfully loaded {len(self.data)} embeddings from pickle (float32).")
         except Exception as e:
             print(f"Error loading embeddings: {e}")
             self.data = []
@@ -118,9 +118,23 @@ class RAGEngine:
         # Use batch processing for better performance and disable progress bar
         query_embedding = encoder.encode([query], convert_to_tensor=True, show_progress_bar=False, normalize_embeddings=True)
 
+        # Enforce float32 dtype on query embedding
+        query_embedding = query_embedding.to(dtype=torch.float32)
+
         # Normalize embeddings for faster cosine similarity
         if not hasattr(self, '_normalized_embeddings'):
             self._normalized_embeddings = F.normalize(self.embeddings_tensor, p=2, dim=1)
+
+        # Enforce float32 dtype on database embeddings
+        if self._normalized_embeddings.dtype != torch.float32:
+            self._normalized_embeddings = self._normalized_embeddings.to(dtype=torch.float32)
+
+        # Validation check to prevent future dtype mismatches
+        if query_embedding.dtype != self._normalized_embeddings.dtype:
+            raise TypeError(
+                f"Embedding dtype mismatch: query embedding has type {query_embedding.dtype} "
+                f"but knowledge base embeddings have type {self._normalized_embeddings.dtype}."
+            )
 
         # Calculate cosine similarity using dot product (faster for normalized vectors)
         cos_scores = torch.matmul(query_embedding, self._normalized_embeddings.T)[0]
