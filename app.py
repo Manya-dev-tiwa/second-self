@@ -722,7 +722,9 @@ def render_graph_page():
                 title=f"{node_data.get('title', '')}\nGroup: {node_data.get('group', 'Uncategorized')}",
                 group=node_data.get("group", "Uncategorized"),
                 size=size,
-                color=color
+                color=color,
+                x=node_data.get("x"),
+                y=node_data.get("y")
             )
             nodes.append(node)
         
@@ -742,12 +744,10 @@ def render_graph_page():
             width=1200,
             height=700,
             directed=False,
-            physics=True,
+            physics=False,
             hierarchical=False,
             nodeHighlightBehavior=True,
-            highlightColor="#667eea",
-            maxVelocity=5,
-            minVelocity=0.1
+            highlightColor="#667eea"
         )
         
         # Graph container

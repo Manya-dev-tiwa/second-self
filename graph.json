@@ -10,7 +10,9 @@
                 "web interface",
                 "pipeline",
                 "functionality"
-            ]
+            ],
+            "x": 800,
+            "y": -438.8
         },
         {
             "id": "0363787c-cce2-46b4-ab4a-74c74a30f0b0",
@@ -20,7 +22,9 @@
             "tags": [
                 "Pets",
                 "Personal"
-            ]
+            ],
+            "x": -161.7,
+            "y": 600
         },
         {
             "id": "03f30a7a-85be-4e0b-ade4-50cd079ed11b",
@@ -31,7 +35,9 @@
                 "test",
                 "pipeline",
                 "verification"
-            ]
+            ],
+            "x": 533.6,
+            "y": 600
         },
         {
             "id": "0eef75b5-53e4-48ca-b483-7b4b52ad331e",
@@ -42,7 +48,9 @@
                 "Saavan",
                 "Hindu",
                 "Festival"
-            ]
+            ],
+            "x": 245.0,
+            "y": 600
         },
         {
             "id": "17001cb8-4281-428c-9443-588742fabc65",
@@ -53,7 +61,9 @@
                 "family",
                 "sisters",
                 "personal"
-            ]
+            ],
+            "x": 759.5,
+            "y": -180.6
         },
         {
             "id": "1a48f884-7839-4c21-bef1-b218dd03932a",
@@ -65,7 +75,9 @@
                 "Family",
                 "Task",
                 "Personal"
-            ]
+            ],
+            "x": -800,
+            "y": 358.2
         },
         {
             "id": "1e577c77-eb9f-4454-a7eb-6c4454499faf",
@@ -78,7 +90,9 @@
                 "Data Processing",
                 "Technology",
                 "Company"
-            ]
+            ],
+            "x": -800,
+            "y": -460.2
         },
         {
             "id": "304e5041-8023-4ba4-b5d0-69f767a54b06",
@@ -88,7 +102,9 @@
             "tags": [
                 "Personality",
                 "Opinion"
-            ]
+            ],
+            "x": -198.1,
+            "y": 35.0
         },
         {
             "id": "4013a56c-3048-4784-8e83-1bc31ed890ba",
@@ -101,7 +117,9 @@
                 "Development",
                 "Project Management",
                 "Personal Productivity"
-            ]
+            ],
+            "x": -517.0,
+            "y": -600
         },
         {
             "id": "444587d6-9bf8-450a-874d-fec08793bef6",
@@ -111,7 +129,9 @@
             "tags": [
                 "family",
                 "personal"
-            ]
+            ],
+            "x": -59.2,
+            "y": 600
         },
         {
             "id": "46ea593a-daa7-455a-b03f-078bec42b63a",
@@ -121,7 +141,9 @@
             "tags": [
                 "family",
                 "siblings"
-            ]
+            ],
+            "x": 800,
+            "y": -267.3
         },
         {
             "id": "4fb3a4f4-e78a-414e-bab5-be87a91f8e67",
@@ -131,7 +153,9 @@
             "tags": [
                 "Personality",
                 "Opinion"
-            ]
+            ],
+            "x": -241.5,
+            "y": 3.6
         },
         {
             "id": "526af112-a927-4545-beaf-0c44e27d3fad",
@@ -142,7 +166,9 @@
                 "LinkedIn",
                 "profile",
                 "Manya Tiwari"
-            ]
+            ],
+            "x": 515.0,
+            "y": -600
         },
         {
             "id": "578f4a13-eb7c-4e66-974f-6c9a15795b41",
@@ -153,7 +179,9 @@
                 "motivation",
                 "encouragement",
                 "inspiration"
-            ]
+            ],
+            "x": -146.3,
+            "y": -17.9
         },
         {
             "id": "5b7ff40a-a43d-48e1-8034-9ed3cbe42629",
@@ -163,7 +191,9 @@
             "tags": [
                 "Personality",
                 "Opinion"
-            ]
+            ],
+            "x": -190.7,
+            "y": 79.7
         },
         {
             "id": "5debc120-666c-49f9-830f-0d62b11e9e3d",
@@ -174,7 +204,9 @@
                 "shopping",
                 "grocery",
                 "list"
-            ]
+            ],
+            "x": 663.2,
+            "y": 600
         },
         {
             "id": "5e336bbe-104d-4436-8dfe-016d46d8f923",
@@ -187,7 +219,9 @@
                 "Collaboration",
                 "Development",
                 "Software"
-            ]
+            ],
+            "x": -237.2,
+            "y": 600
         },
         {
             "id": "683c6624-3f2b-47f6-8773-9e1ebd2fb368",
@@ -199,7 +233,9 @@
                 "featureX",
                 "meeting",
                 "notes"
-            ]
+            ],
+            "x": -752.6,
+            "y": 600
         },
         {
             "id": "6b92e1dd-7693-46b1-b901-39fbddb58c80",
@@ -210,7 +246,9 @@
                 "sentence-transformers",
                 "cosine similarity",
                 "vector normalization"
-            ]
+            ],
+            "x": -800,
+            "y": 524.2
         },
         {
             "id": "6f450b3c-85ba-484c-9720-cd6e58b7dd7d",
@@ -221,7 +259,9 @@
                 "smart mirror",
                 "calendar",
                 "project idea"
-            ]
+            ],
+            "x": -800,
+            "y": -287.8
         },
         {
             "id": "736eb51c-5421-40dd-b834-cc9aad16ef03",
@@ -231,7 +271,9 @@
             "tags": [
                 "Knowledge Graph",
                 "Video"
-            ]
+            ],
+            "x": -800,
+            "y": -600
         },
         {
             "id": "75ef17f0-2129-4fdd-a5a8-b04fe70f2b4e",
@@ -242,7 +284,9 @@
                 "vector databases",
                 "Milvus",
                 "Pinecone"
-            ]
+            ],
+            "x": -705.3,
+            "y": -600
         },
         {
             "id": "81f5c837-2a65-490c-8572-5716b866cab2",
@@ -252,7 +296,9 @@
             "tags": [
                 "family",
                 "siblings"
-            ]
+            ],
+            "x": 743.6,
+            "y": -254.6
         },
         {
             "id": "8acc54cb-5753-45ba-8f8e-ebc964a27d25",
@@ -263,7 +309,9 @@
                 "Python",
                 "AI",
                 "Machine Learning"
-            ]
+            ],
+            "x": 3.8,
+            "y": -600
         },
         {
             "id": "916792f2-e98a-4d9b-924c-cc594dc80e65",
@@ -274,7 +322,9 @@
                 "Zettelkasten",
                 "PARA",
                 "Personal Knowledge Management"
-            ]
+            ],
+            "x": 800,
+            "y": -578.2
         },
         {
             "id": "9ff20bd6-66cc-491c-9a54-d7ef6760f66d",
@@ -287,7 +337,9 @@
                 "task",
                 "reminder",
                 "schedule"
-            ]
+            ],
+            "x": 800,
+            "y": 67.5
         },
         {
             "id": "a12ff7b5-9e85-4c10-ac56-7184f62cea94",
@@ -300,7 +352,9 @@
                 "organization",
                 "research",
                 "knowledge-management"
-            ]
+            ],
+            "x": 800,
+            "y": 381.4
         },
         {
             "id": "a49ee4be-a0e8-4403-9699-125fd4d97b3a",
@@ -311,7 +365,9 @@
                 "family",
                 "birthday",
                 "personal"
-            ]
+            ],
+            "x": 782.3,
+            "y": 600
         },
         {
             "id": "a5698065-815b-4185-994b-27b258426776",
@@ -322,7 +378,9 @@
                 "test",
                 "pipeline",
                 "verification"
-            ]
+            ],
+            "x": 459.3,
+            "y": 600
         },
         {
             "id": "a624e845-2b47-40cc-8fc7-195d20e6360a",
@@ -332,7 +390,9 @@
             "tags": [
                 "pets",
                 "personal"
-            ]
+            ],
+            "x": -291.5,
+            "y": 600
         },
         {
             "id": "b2e30c79-bbc7-412f-b97b-aee1a2717026",
@@ -342,7 +402,9 @@
             "tags": [
                 "Introduction",
                 "Author"
-            ]
+            ],
+            "x": -257.2,
+            "y": 107.3
         },
         {
             "id": "bd14cf7f-813b-4554-9ad3-20b6209e0871",
@@ -353,7 +415,9 @@
                 "opinion",
                 "personality",
                 "name"
-            ]
+            ],
+            "x": -291.3,
+            "y": 54.2
         },
         {
             "id": "c1f62799-8c8a-4731-9854-44aeb2776aea",
@@ -363,7 +427,9 @@
             "tags": [
                 "book",
                 "recommendation"
-            ]
+            ],
+            "x": -800,
+            "y": -564.2
         },
         {
             "id": "c6250a62-6ade-48ac-b860-f198bc511b93",
@@ -376,7 +442,9 @@
                 "Indexing",
                 "Retrievability",
                 "Chat"
-            ]
+            ],
+            "x": -800,
+            "y": -12.5
         },
         {
             "id": "c8b32d53-2582-4b01-a2fe-46336f186db7",
@@ -389,7 +457,9 @@
                 "Computer Science",
                 "Intelligence",
                 "Robotics"
-            ]
+            ],
+            "x": -78.1,
+            "y": -600
         },
         {
             "id": "c9be11d4-3a7d-4736-9a3f-d10ca573354e",
@@ -402,7 +472,9 @@
                 "Repository",
                 "Link",
                 "Resource"
-            ]
+            ],
+            "x": 594.8,
+            "y": -600
         },
         {
             "id": "cc612ae6-4b23-4129-9847-e068cef16fd0",
@@ -415,7 +487,9 @@
                 "Language Models",
                 "Transformative Technology",
                 "Future"
-            ]
+            ],
+            "x": 800,
+            "y": -600
         },
         {
             "id": "d33ccf7b-085d-4893-b7a1-31a9c49f32e2",
@@ -427,7 +501,9 @@
                 "web interface",
                 "pipeline",
                 "functionality"
-            ]
+            ],
+            "x": 800,
+            "y": -507.2
         },
         {
             "id": "d6f37969-076b-4094-a39e-ca428ebf7f53",
@@ -438,7 +514,9 @@
                 "family",
                 "relationships",
                 "siblings"
-            ]
+            ],
+            "x": 800,
+            "y": -201.3
         },
         {
             "id": "e6425f0b-aac8-427a-8e86-eedbadfd9057",
@@ -451,7 +529,9 @@
                 "Web Development",
                 "Library",
                 "Application"
-            ]
+            ],
+            "x": 800,
+            "y": 600
         },
         {
             "id": "f1208584-dbea-437d-9f2d-c25d337b6ae6",
@@ -461,7 +541,9 @@
             "tags": [
                 "memory",
                 "writing"
-            ]
+            ],
+            "x": 738.4,
+            "y": 600
         },
         {
             "id": "f3e834be-7cd6-4674-99a8-e7865ea64182",
@@ -474,7 +556,9 @@
                 "team",
                 "deadline",
                 "project"
-            ]
+            ],
+            "x": -683.5,
+            "y": 600
         },
         {
             "id": "f49048b8-18b6-48ab-8f10-be91e18e8831",
@@ -487,7 +571,9 @@
                 "Indexing",
                 "Retrievability",
                 "Test"
-            ]
+            ],
+            "x": -800,
+            "y": 68.4
         },
         {
             "id": "fcedb2d5-de42-4729-9d66-061d190c7877",
@@ -498,7 +584,9 @@
                 "work",
                 "completion",
                 "task"
-            ]
+            ],
+            "x": -800,
+            "y": 600
         }
     ],
     "edges": [
