@@ -14,6 +14,7 @@ raw/*
 # Deployment specific
 # Allow committing embeddings so Streamlit Cloud can run the RAG engine
 !data/embeddings.pkl
+!data/embeddings.json
 data/file_hashes.pkl
 .streamlit/secrets.toml
 *.lnk

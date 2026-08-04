@@ -148,22 +148,34 @@ def process_links():
                 f.write(original_content.strip() + "\n")
             
     # Save embeddings for RAG
-    logging.info("Saving embeddings to data/embeddings.pkl...")
+    logging.info("Saving embeddings to data/embeddings.json and data/embeddings.pkl...")
     os.makedirs(os.path.join(os.path.dirname(__file__), 'data'), exist_ok=True)
     
-    saved_data = []
+    saved_data_json = []
+    saved_data_pkl = []
     cpu_embeddings = embeddings.cpu().numpy()
     for i, (filepath, metadata) in enumerate(metadata_list):
-        saved_data.append({
+        saved_data_json.append({
+            "id": metadata.get('id'),
+            "metadata": metadata,
+            "text": documents[i],
+            "embedding": cpu_embeddings[i].tolist()  # Convert to list of floats for JSON
+        })
+        saved_data_pkl.append({
             "id": metadata.get('id'),
             "metadata": metadata,
             "text": documents[i],
             "embedding": cpu_embeddings[i]
         })
         
+    embeddings_json_path = os.path.join(os.path.dirname(__file__), 'data', 'embeddings.json')
+    import json
+    with open(embeddings_json_path, 'w', encoding='utf-8') as f:
+        json.dump(saved_data_json, f, indent=2)
+        
     embeddings_path = os.path.join(os.path.dirname(__file__), 'data', 'embeddings.pkl')
     with open(embeddings_path, 'wb') as f:
-        pickle.dump(saved_data, f)
+        pickle.dump(saved_data_pkl, f)
     
     # Save hash cache for next time
     with open(hash_cache_path, 'wb') as f:

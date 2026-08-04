@@ -12,6 +12,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Initialize models
+EMBEDDINGS_JSON_PATH = os.path.join(os.path.dirname(__file__), 'data', 'embeddings.json')
 EMBEDDINGS_PATH = os.path.join(os.path.dirname(__file__), 'data', 'embeddings.pkl')
 
 class RAGEngine:
@@ -27,6 +28,27 @@ class RAGEngine:
         self._load_data()
         
     def _load_data(self):
+        import json
+        # Prefer JSON for platform and python version independence
+        if os.path.exists(EMBEDDINGS_JSON_PATH):
+            try:
+                with open(EMBEDDINGS_JSON_PATH, 'r', encoding='utf-8') as f:
+                    self.data = json.load(f)
+
+                if not self.data:
+                    print("Embeddings JSON file is empty. No data loaded.")
+                    self.embeddings_tensor = None
+                    return
+
+                # Convert list of embeddings to a single numpy array then to tensor
+                embeds = np.array([item["embedding"] for item in self.data])
+                self.embeddings_tensor = torch.tensor(embeds)
+                print(f"Successfully loaded {len(self.data)} embeddings from JSON.")
+                return
+            except Exception as e:
+                print(f"Error loading JSON embeddings: {e}. Falling back to pickle...")
+
+        # Fallback to pickle
         if not os.path.exists(EMBEDDINGS_PATH):
             print("No embeddings found. Please run link.py first to generate embeddings.")
             self.data = []
@@ -45,7 +67,7 @@ class RAGEngine:
             # Convert list of embeddings to a single numpy array then to tensor if needed
             embeds = np.array([item["embedding"] for item in self.data])
             self.embeddings_tensor = torch.tensor(embeds)
-            print(f"Successfully loaded {len(self.data)} embeddings.")
+            print(f"Successfully loaded {len(self.data)} embeddings from pickle.")
         except Exception as e:
             print(f"Error loading embeddings: {e}")
             self.data = []
